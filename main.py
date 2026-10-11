@@ -45,6 +45,8 @@ def add_expense(manager: ExpenseManager) -> None:
     save_expenses(manager.get_all_expenses())
 
     print("\nExpense added and saved successfully.")
+
+
 @log_function_call
 def show_analysis(manager: ExpenseManager) -> None:
     analyzer = ExpenseAnalyzer()
