@@ -11,7 +11,6 @@ jobs:
   test:
     runs-on: ubuntu-latest
 
-
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -24,7 +23,7 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install pytest pytest-cov mypy ruff hypothesis
+          pip install pytest pytest-cov mypy ruff hypothesis fastapi httpx
 
       - name: Run automated tests
         run: python -m pytest -v
@@ -37,4 +36,3 @@ jobs:
 
       - name: Check code formatting
         run: python -m ruff format --check .
-
