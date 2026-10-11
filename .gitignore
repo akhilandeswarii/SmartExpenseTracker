@@ -1,0 +1,25 @@
+
+# Python virtual environment
+venv/
+.venv/
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Testing and coverage
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.hypothesis/
+.coverage
+htmlcov/
+
+# Temporary performance test files
+data/performance_test/
+
+# Node dependencies
+node_modules/
+
+# IDE settings
+.vscode/
